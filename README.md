@@ -93,4 +93,4 @@ This project is open source and free to use. Feel free to fork and customize.
 
 **Duong Ngoc Khoi Nguyen**  
 3rd-year Software Engineering Student @ Ton Duc Thang University  
-📫 NguyenDuong939705@gmail.com • 🌐 ndportfolio
+📫 NguyenDuong939705@gmail.com • 🌐 Portfolio: https://ndportfolio-an67.onrender.com/
