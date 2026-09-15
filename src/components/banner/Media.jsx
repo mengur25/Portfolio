@@ -26,7 +26,7 @@ const Media = () => {
             <FaFacebookF />
           </a>
           <a
-            href="https://www.instagram.com/_mengur_/#"
+            href="https://www.instagram.com/mengur__/#"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"

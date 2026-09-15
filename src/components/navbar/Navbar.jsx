@@ -86,7 +86,7 @@ const Navbar = () => {
                     <FaFacebookF />
                   </a>
                   <a
-                    href="https://www.instagram.com/_mengur_/#"
+                    href="https://www.instagram.com/mengur__/#"
                     className="bannerIcon"
                   >
                     <FaInstagram />

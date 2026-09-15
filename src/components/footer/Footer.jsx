@@ -11,7 +11,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/ngur.nd/" className="bannerIcon">
             <FaFacebookF />
           </a>
-          <a href="https://www.instagram.com/_mengur_/#" className="bannerIcon">
+          <a href="https://www.instagram.com/mengur__/#" className="bannerIcon">
             <FaInstagram />
           </a>
           <a href="https://www.linkedin.com/in/nguyen-duong-41205-mengur/" className="bannerIcon">
