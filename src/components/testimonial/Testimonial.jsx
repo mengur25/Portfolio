@@ -3,12 +3,22 @@ import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from "../layouts/Title";
-import {
-  testimonialOne,
-  testimonialTwo,
-  testimonialThree,
-  quote,
-} from "../../assets";
+import { quote } from "../../assets";
+
+// Default anonymous Facebook-style avatar
+const DefaultFbAvatar = () => (
+  <div className="h-72 md:h-32 lgl:h-72 w-full rounded-lg bg-gradient-to-b from-[#25282e] to-[#181a1d] border border-gray-800 flex items-center justify-center overflow-hidden shadow-inner relative group">
+    <svg
+      className="w-28 h-28 lgl:w-40 lgl:h-40 text-gray-500 group-hover:text-designColor/70 duration-300 transition-colors"
+      viewBox="0 0 128 128"
+      fill="currentColor"
+    >
+      <circle cx="64" cy="46" r="22" />
+      <path d="M24 110C24 89 40 74 62 74H66C88 74 104 89 104 110V114H24V110Z" />
+    </svg>
+    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"></div>
+  </div>
+);
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -91,6 +101,7 @@ const Testimonial = () => {
       ></div>
     ),
   };
+
   return (
     <section
       id="testimonial"
@@ -105,11 +116,7 @@ const Testimonial = () => {
           <div className="w-full">
             <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
               <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
-                <img
-                  className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialOne}
-                  alt="testimonialOne"
-                />
+                <DefaultFbAvatar />
                 <div className="w-full flex flex-col justify-end">
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                     Mr. Le Anh Khoa
@@ -157,11 +164,7 @@ const Testimonial = () => {
           <div className="w-full">
             <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
               <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
-                <img
-                  className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialTwo}
-                  alt="testimonialTwo"
-                />
+                <DefaultFbAvatar />
                 <div className="w-full flex flex-col justify-end">
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                     Mr. Vo Hoang Quan
@@ -207,11 +210,7 @@ const Testimonial = () => {
           <div className="w-full">
             <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
               <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
-                <img
-                  className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialThree}
-                  alt="testimonialThree"
-                />
+                <DefaultFbAvatar />
                 <div className="w-full flex flex-col justify-end">
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                     Mr. Doan Xuan Thanh
