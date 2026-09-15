@@ -9,63 +9,71 @@ const Education = () => {
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
-      {/* part one */}
-      <div>
+      {/* Column 1 - Formal University Education */}
+      <div className="w-full lgl:w-1/2">
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2023 - 2027</p>
+          <h2 className="text-3xl md:text-4xl font-bold">University Degree</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Third-year Student in Software Engineer"
-            subTitle="Ton Duc Thang University"
-            result="3.1/4"
-            des="Studying core areas of software engineering including algorithms, databases, front-end & back-end development, and UI/UX design. Gaining hands-on experience through university projects and teamwork."
+            title="Bachelor of Software Engineering"
+            subTitle="Ton Duc Thang University (2023 - Present)"
+            result="GPA: 8.02 / 10"
+            des="Pursuing a Bachelor's degree in Software Engineering with an expected graduation date in 04/2027. Consistently maintaining a high academic performance with a cumulative GPA of 8.02/10."
+            highlights={[
+              "Major: Software Engineering (Expected Graduation: 04/2027)",
+              "Cumulative GPA: 8.02/10",
+              "Core Courses: Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Systems, Web Programming, Software Architecture",
+              "Practical Coursework: Designed and implemented full-stack web applications with React.js, Node.js, Express.js, MongoDB, and MySQL"
+            ]}
           />
           <ResumeCard
-            title="Google UX Design"
-            subTitle="2025"
-            result="Success"
-            des="Completed a comprehensive course on user-centered design, usability testing, wireframing, and prototyping. Developed real-world UI solutions with tools like Figma and Google Design frameworks."
-          />
-          <ResumeCard
-            title="High School Education"
-            subTitle="Xuan Loc High School (2020 - 2023)"
-            result="4.2/5"
-            des="Graduated with a strong academic foundation, especially in mathematics and computer science. Participated in extracurricular activities and tech clubs that fostered early interest in programming."
+            title="Continuous Technical Learning"
+            subTitle="Modern Web Technologies & Best Practices"
+            result="Self-Driven"
+            des="Proactively mastering modern frontend and backend ecosystems, clean coding principles, and responsive web design."
+            highlights={[
+              "Mastering React.js ecosystem, TypeScript, Tailwind CSS, and MUI",
+              "Developing RESTful APIs with Node.js and Express.js",
+              "Working with both SQL (MySQL, SQLite) and NoSQL (MongoDB) databases",
+              "Practicing Git workflows, branching strategies, and team collaboration"
+            ]}
           />
         </div>
       </div>
-      {/* part Two */}
 
-      <div>
+      {/* Column 2 - Academic Excellence & Key Course Projects */}
+      <div className="w-full lgl:w-1/2">
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">
-            2023 - Present
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2023 - Present</p>
+          <h2 className="text-3xl md:text-4xl font-bold">Academic Focus & Foundation</h2>
         </div>
 
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Private Tutor - English"
-            subTitle="Self-employed - (2023 - 2024)"
-            result="Ho Chi Minh City"
-            des="Provided one-on-one tutoring sessions for student. Helped students improve grades and build foundational skills."
+            title="Software Engineering Fundamentals"
+            subTitle="Ton Duc Thang University"
+            result="Core Strengths"
+            des="Gained solid foundations in software design patterns, MVC architecture, OOP principles, and clean system design."
+            highlights={[
+              "Applied MVC architecture and OOP patterns across Java, C#, and JavaScript/TypeScript projects",
+              "Requirement analysis, system modeling with UML, and database normalization",
+              "API design and integration between client-side interfaces and backend services",
+              "Responsive web development following modern UI/UX standards"
+            ]}
           />
 
           <ResumeCard
-            title="Member - IT-Zone Club"
-            subTitle="Ton Duc Thang University - (2023 - Present)"
-            result="Ho Chi Minh City"
-            des="Actively participated in technology workshops, coding competitions, and group projects. Collaborated on internal club tools using web technologies like React and Firebase. Supported junior members in technical discussions."
-          />
-
-          <ResumeCard
-            title="Freelance Web Projects"
-            subTitle="Personal & Team Projects - (2023 - Present)"
-            result="Seft Study"
-            des="Built and deployed small-scale web applications such as portfolios, blogs, and CRUD-based task managers. Practiced Git workflows, responsive UI design, and integrated REST APIs. Collaborated with peers for feedback and improvements."
+            title="Teamwork & Collaboration"
+            subTitle="Academic & Club Projects"
+            result="Practical Experience"
+            des="Collaborated in agile university sprint teams and peer projects to build complete web solutions."
+            highlights={[
+              "Code reviews and collaborative version control using GitHub",
+              "Effective communication to align system requirements with team deliverables",
+              "Problem-solving, debugging, and maintaining cross-browser compatibility"
+            ]}
           />
         </div>
       </div>

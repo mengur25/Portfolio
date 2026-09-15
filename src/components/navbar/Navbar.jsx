@@ -50,10 +50,8 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-24 mb-4" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                <p className="text-sm text-gray-400 mt-2 leading-relaxed">
+                  Software Engineering student at Ton Duc Thang University with around 1 year of practical web development experience.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">

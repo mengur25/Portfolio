@@ -1,42 +1,43 @@
+import React from "react";
 import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe} from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { FaServer, FaDatabase, FaCode, FaGitAlt, FaLayerGroup } from "react-icons/fa";
 
 // Features Data
 export const featuresData = [
   {
     id: 1,
+    icon: <FaCode />,
     title: "Frontend Development",
-    des: "I develop dynamic user interfaces with frameworks such as React or Vue. I work with reusable components, state management (Redux, Context API), and API integration.",
+    des: "Build responsive, high-performance web interfaces and landing pages using React.js, Vite, JavaScript, TypeScript, Tailwind CSS, and MUI with reusable component architecture.",
   },
   {
     id: 2,
-    icon: <AiFillAppstore />,
-    title: "Web Development",
-    des: "I build modern, responsive websites using HTML, CSS, JavaScript, and frameworks like React. I focus on clean code and performance optimization",
+    icon: <FaServer />,
+    title: "Backend & RESTful APIs",
+    des: "Develop and maintain robust backend services using Node.js and Express.js. Design clean RESTful APIs, handle authentication, and implement business logic.",
   },
   {
     id: 3,
-    icon: <SiProgress />,
-    title: "Version Control & Teamwork",
-    des: "I use Git and GitHub for source control, branching, and pull requests. I'm comfortable working in teams and managing collaborative projects.",
+    icon: <FaDatabase />,
+    title: "Database Management",
+    des: "Work with both NoSQL (MongoDB) and Relational databases (MySQL, SQLite) to model schemas, optimize queries, and ensure reliable data persistence.",
   },
   {
     id: 4,
-    icon: <FaMobile />,
-    title: "Mobile Development",
-    des: "I create sleek, functional mobile app designs and prototypes using Flutter. I focus on both design aesthetics and smooth user interaction.",
+    icon: <AiFillAppstore />,
+    title: "Full-Stack Web Apps",
+    des: "End-to-end web application development for healthcare (Telehealth), e-commerce (YNBuy), hotel booking (YNHotel), and logistics workflows.",
   },
   {
     id: 5,
-    icon: <SiAntdesign />,
-    title: "UX/UI Design",
-    des: "I design user-friendly interfaces and experiences using tools like Figma and Adobe XD. I understand user behavior, wireframing, prototyping, and usability principles.",
+    icon: <FaGitAlt />,
+    title: "Git & Team Collaboration",
+    des: "Manage source code with Git/GitHub, maintain branching strategies, review pull requests, and collaborate smoothly across development sprints.",
   },
   {
     id: 6,
-    icon: <FaGlobe />,
-    title: "Hosting Websites",
-    des: "I deploy and manage websites using platforms like GitHub Pages, Vercel, Netlify, or Firebase. I understand domain linking, CI/CD basics, and how to keep websites online and accessible.",
+    icon: <FaLayerGroup />,
+    title: "Software Architecture & OOP",
+    des: "Apply Object-Oriented Programming (OOP), MVC architectural patterns, and API integration best practices for clean, scalable, and maintainable software.",
   },
 ];

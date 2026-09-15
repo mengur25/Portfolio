@@ -4,41 +4,66 @@ import {
   FaLinkedinIn,
   FaReact,
   FaInstagram,
+  FaNodeJs,
 } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiTypescript, SiMongodb } from "react-icons/si";
+
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
       <div>
-        <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
+        <h2 className="text-base uppercase font-titleFont mb-4 text-gray-300">
+          Find me in
+        </h2>
         <div className="flex gap-4">
-          <a href="https://www.facebook.com/ngur.nd/" className="bannerIcon">
+          <a
+            href="https://www.facebook.com/ngur.nd/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Facebook"
+            className="bannerIcon"
+          >
             <FaFacebookF />
           </a>
-          <a href="https://www.instagram.com/_mengur_/#" className="bannerIcon">
+          <a
+            href="https://www.instagram.com/_mengur_/#"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="bannerIcon"
+          >
             <FaInstagram />
           </a>
-          <a href="https://www.linkedin.com/in/nguyen-duong-41205-mengur/" className="bannerIcon">
+          <a
+            href="https://www.linkedin.com/in/nguyen-duong-41205-mengur/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="bannerIcon"
+          >
             <FaLinkedinIn />
           </a>
         </div>
       </div>
       <div>
-        <h2 className="text-base uppercase font-titleFont mb-4">
+        <h2 className="text-base uppercase font-titleFont mb-4 text-gray-300">
           BEST SKILL ON
         </h2>
         <div className="flex gap-4">
-          <span className="bannerIcon">
+          <span className="bannerIcon" title="React.js">
             <FaReact />
           </span>
-          <span className="bannerIcon">
-            <SiNextdotjs />
+          <span className="bannerIcon" title="TypeScript">
+            <SiTypescript />
           </span>
-          <span className="bannerIcon">
+          <span className="bannerIcon" title="Node.js">
+            <FaNodeJs />
+          </span>
+          <span className="bannerIcon" title="MongoDB">
+            <SiMongodb />
+          </span>
+          <span className="bannerIcon" title="Tailwind CSS">
             <SiTailwindcss />
-          </span>
-          <span className="bannerIcon">
-            <SiFigma />
           </span>
         </div>
       </div>
